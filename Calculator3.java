@@ -30,12 +30,12 @@ public class Calculator3 {
 		  	System.out.print("Ответ:");
 		    System.out.print(number1 % number2);
 		} else if (mathoperation == '^') {
-		 		int rezyltat = 1;
+		 		int result_drobi = 1;
 		        for (int x = 1; x <= number2 ; x++) {
-		        	rezyltat *= number1;
+		        	result_drobi *= number1;
 		}
 		    	System.out.print("Ответ:");
-		    	System.out.print(rezyltat);
+		    	System.out.print(result_drobi);
 
 
 
