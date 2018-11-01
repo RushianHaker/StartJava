@@ -16,11 +16,11 @@ public class Calculator1 {
          } else if (mathOperation == '%') {
             System.out.println(number1 % number2);
          } else if (mathOperation == '^') {
-            int Result = 1;
+            int result_drobi = 1;
             for (int x = 1; x <= number2 ; x++) {
-                Result*= number1;
+                result_drobi*= number1;
          }
-         System.out.println(Result);
+         System.out.println(result_drobi);
       }    
    }
 }	
