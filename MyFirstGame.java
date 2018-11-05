@@ -8,20 +8,20 @@ public class MyFirstGame {
         System.out.println("Удачи!");
         System.out.println("Введите свое число.");
         
-         int guessNumber = 45;
-         int playerNumber;
+        int guessNumber = 45;
+        int playerNumber;
 
-          do {
-                 playerNumber = scan.nextInt();
-             if (playerNumber < guessNumber) {
-                 System.out.println("Введеное мной число - больше!");
-             } else if (playerNumber > guessNumber) {
-                 System.out.println("Введеное мной число - меньше!");
-             } else {
-                 break;
-             }  
-          }  while(playerNumber != guessNumber);
+        do {
+            playerNumber = scan.nextInt();
+            if (playerNumber < guessNumber) {
+                System.out.println("Введеное мной число - больше!");
+            } else if (playerNumber > guessNumber) {
+                System.out.println("Введеное мной число - меньше!");
+            } else {
+                break;
+            }
+        } while(playerNumber != guessNumber);
                
-                 System.out.println("Поздравляю, ты угадал!");                         
+        System.out.println("Поздравляю, ты угадал!");                         
     }
 }
