@@ -20,7 +20,7 @@ public class MyFirstGame {
             } else {
                 break;
             }
-        } while(playerNumber != guessNumber);
+        } while (playerNumber != guessNumber);
                
         System.out.println("Поздравляю, ты угадал!");                         
     }
