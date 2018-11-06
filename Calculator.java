@@ -5,32 +5,22 @@ public class Calculator {
         int number2 = 5;
         char mathOperation = '*';
         
-         if(mathOperation == '/') {
+        if(mathOperation == '/') {
             System.out.println(number1 / number2);
-         }else if (mathOperation == '*') {
+        } else if (mathOperation == '*') {
       		System.out.println(number1 * number2);
-         }else if (mathOperation == '+') {
+        } else if (mathOperation == '+') {
           	System.out.println(number1 + number2);
-         }else if (mathOperation == '-') {
+        } else if (mathOperation == '-') {
             System.out.println(number1 - number2);
-         }else if (mathOperation == '%') {
+        } else if (mathOperation == '%') {
             System.out.println(number1 % number2);
-         }else if (mathOperation == '^') {
+        } else if (mathOperation == '^') {
             int fractionalResult = 1;
             for (int i = 1; i <= number2 ; i++) {
                 fractionalResult *= number1;
-         }  System.out.println(fractionalResult);
-       }    
-   }
+            }  
+            System.out.println(fractionalResult);
+        }    
+   } 
 }	
-
-
-
-
-
-
-
-
-
-
-
