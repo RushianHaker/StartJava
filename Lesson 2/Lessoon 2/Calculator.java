@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class Calculator {
    static Scanner scanner = new Scanner(System.in);
 
-		double num1 = getDouble1();
+		int num1 = getint1();
 		char operation_value = getOperation();			
-		double num2 = getDouble2();
-		double outcome = calculatorTest(num1, num2, operation_value);
+		int num2 = getint2();
+		int outcome = calculatorTest(num1, num2, operation_value);
 
-	public static double getDouble1() {
+	public static int getint1() {
 		System.out.print("Введите первое число:");
-		double num1 = scanner.nextDouble();
+		int num1 = scanner.nextInt();
 		return num1;
 	}
 
@@ -20,14 +20,14 @@ public class Calculator {
 		return operation_value;
 	}
 
-	public static double getDouble2() {
+	public static int getint2() {
 		System.out.print("Введите второе число:");
-		double num2 = scanner.nextDouble();
+		int num2 = scanner.nextInt();
 		return num2;
 	}
 
-	public static double calculatorTest(double num1, double num2, char operation_value) {
-		double outcome;
+	public static int calculatorTest(int num1, int num2, char operation_value) {
+		int outcome;
 		switch(operation_value) {
 			case '+':
 				outcome = num1 + num2;
