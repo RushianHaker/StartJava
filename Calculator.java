@@ -8,9 +8,9 @@ public class Calculator {
         if(mathOperation == '/') {
             System.out.println(number1 / number2);
         } else if (mathOperation == '*') {
-      		System.out.println(number1 * number2);
+            System.out.println(number1 * number2);
         } else if (mathOperation == '+') {
-          	System.out.println(number1 + number2);
+            System.out.println(number1 + number2);
         } else if (mathOperation == '-') {
             System.out.println(number1 - number2);
         } else if (mathOperation == '%') {
@@ -23,4 +23,4 @@ public class Calculator {
             System.out.println(fractionalResult);
         }    
    } 
-}	
+}   
