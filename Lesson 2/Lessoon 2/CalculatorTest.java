@@ -16,8 +16,9 @@ public class CalculatorTest {
 		System.out.print("Введите второе число:");
 		int num2 = scanner.nextInt();
 
-		int result = calc.calculat(num1, num2, operationValue);
-		System.out.print("Ответ: "+ result);
+		int outcome = calc.calculate(num1, num2, operationValue);
+
+		System.out.print("Ответ: "+ outcome);
 	}
 }
 
