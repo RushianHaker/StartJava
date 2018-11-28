@@ -1,24 +1,29 @@
 public class Calculator {
 
-	public static int calculat(int num1, int num2, char operationValue) {
-		int outcome = 0;
+	int outcome;
+
+	public int calculate(int num1, int num2, char operationValue) {
+		
 		switch(operationValue) {
 			case '+':
-				outcome = num1 + num2;
-				break;
+				return num1 + num2;
 			case '-':
-				outcome = num1 - num2;
-				break;
+				return num1 - num2;
 			case '*':
-				outcome = num1 * num2;
-				break;
+				return num1 * num2;
 			case '/':
-				outcome = num1 / num2;
-				break;
+				return num1 / num2;
+			case '%':
+				return num1 % num2;
+			case '^':
+				int outcome = 1;
+				for(int i = 1; i <= num2; i++) {
+					outcome = outcome * num1;
+			}
+				return outcome;
 			default:
 				System.out.print("Ошибка ввода.");
-		}  
-			return outcome;
+		}
+		return 0;  
 	}
 }
-//Осталось всделать (^) и (%);
