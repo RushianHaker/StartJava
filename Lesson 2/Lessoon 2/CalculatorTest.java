@@ -21,4 +21,3 @@ public class CalculatorTest {
 		System.out.print("Ответ: "+ outcome);
 	}
 }
-
