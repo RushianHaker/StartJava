@@ -1,6 +1,6 @@
 public class Calculator {
 
-	int outcome;
+	int result;
 
 	public int calculate(int num1, int num2, char operationValue) {
 		
@@ -16,11 +16,11 @@ public class Calculator {
 			case '%':
 				return num1 % num2;
 			case '^':
-				int outcome = 1;
+				int result = 1;
 				for(int i = 1; i <= num2; i++) {
-					outcome = outcome * num1;
+					result = result * num1;
 			}
-				return outcome;
+				return result;
 			default:
 				System.out.print("Ошибка ввода.");
 		}
