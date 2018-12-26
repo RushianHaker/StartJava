@@ -1,41 +1,31 @@
+import java.util.Scanner;
+
 public class GuessNumberTest {
 
     public static void main(String[] args) {
-        
-      Scanner input = new Scanner(System.in);
 
-        System.out.println("First player input your name, please.");
-        String userPlayerOne = input.nextLine();
-        Player playerOne = new Player(userPlayerOne);
+        Scanner scan = new Scanner(System.in);
+        String continueUse;
 
-        System.out.println("Second player input your name, please.");
-        String userPlayerTwo = input.nextLine();
-        Player playerTwo = new Player(userPlayerTwo);
+        System.out.println("Hi, bro! Enter your name player one: ");
+        Player playerOne = new Player(scan.next());
+        System.out.println("Hi, " + playerOne.getName());
 
-        System.out.println("Guess number!!!");
-        
-        int randomNumber = 0;
-        GuessNumber game = new GuessNumber(userPlayerOne, userPlayerTwo, randomNumber);
-        randomNumber = game.guessNumber(randomNumber);
-        System.out.println("First player inputs number first");
+        System.out.println("Hi, bro! Enter name player two: ");
+        Player playerTwo = new Player(scan.next());
+        System.out.println("Hi, " + playerTwo.getName());
+
+        System.out.println("Now, try to guess the number: "); 
+
+        GuessNumber guess = new GuessNumber(playerOne, playerTwo);
+
         do {
-        
-        boolean answer = game.guessNumber(userPlayerOne, userPlayerTwo, randomNumber);
-        
-            do {    
-                System.out.println("Do you want to continue?[yes/no]");
-                userAnswer = input.next();
-                if (userAnswer.equals("yes")) {
-                    System.out.println("Guess number!!!");
-                } else if (userAnswer.equals("no")) {
-                    System.out.println("Bye");
-                    break;
-                } else {
-                    System.out.println("Error!!");
-                }
-            } while (!userAnswer.equals("yes"));
-        } while (!userAnswer.equals("no"));
-        
-       
+            guess.startGame();
+            do {
+                System.out.println("Wanna continue? [Yes/No]: ");
+                continueUse = scan.next();
+            } while (!continueUse.equals("Yes") && !continueUse.equals("No"));
+        } while (continueUse.equals("Yes"));
+        System.out.println("Good luck, bro");
     }
 }
